@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "seriesId": "senja",
+  "episodeId": "senja-invalid-unsupported-view",
+  "revision": "rev-000-negative-test",
+  "reviewStatus": "draft",
+  "fps": 24,
+  "width": 1920,
+  "height": 1080,
+  "characters": [
+    {
+      "schemaVersion": 1,
+      "id": "arga_v3",
+      "displayName": "Arga",
+      "visualDirection": "modern-series-b",
+      "status": "review-candidate",
+      "headScaleHeads": 7.5,
+      "floorBaselineY": 935,
+      "supportedViews": [
+        "front",
+        "three-quarter-right",
+        "three-quarter-left",
+        "profile-right",
+        "profile-left",
+        "back"
+      ],
+      "supportedMotions": [
+        "walk-stop-turn-dialogue"
+      ],
+      "supportedHands": [
+        "relaxed",
+        "open"
+      ],
+      "supportedEmotions": [
+        "neutral",
+        "melancholy"
+      ]
+    }
+  ],
+  "motionClips": [
+    {
+      "id": "clip-bad-view",
+      "characterId": "arga_v3",
+      "motionType": "walk-stop-turn-dialogue",
+      "durationSeconds": 4,
+      "requiredViews": [
+        "high-angle-front"
+      ],
+      "rootStartStage": {
+        "x": 560,
+        "y": 935
+      },
+      "rootEndStage": {
+        "x": 820,
+        "y": 935
+      }
+    }
+  ],
+  "dialogueLines": [],
+  "dialogueTracks": [],
+  "shots": [
+    {
+      "id": "shot-bad-01",
+      "sceneId": "scene-invalid",
+      "durationSeconds": 4,
+      "framing": "wide",
+      "characterId": "arga_v3",
+      "initialView": "front",
+      "requiredViews": [
+        "front"
+      ],
+      "motionClipId": "clip-bad-view",
+      "dialogueLineIds": [],
+      "cameraMode": "fixed"
+    }
+  ]
+}

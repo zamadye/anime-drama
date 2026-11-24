@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 1,
+  "seriesId": "senja",
+  "episodeId": "senja-m2-arga-study",
+  "revision": "rev-001-candidate",
+  "reviewStatus": "review-candidate",
+  "fps": 24,
+  "width": 1920,
+  "height": 1080,
+  "characters": [
+    {
+      "schemaVersion": 1,
+      "id": "arga_v3",
+      "displayName": "Arga",
+      "visualDirection": "modern-series-b",
+      "status": "review-candidate",
+      "headScaleHeads": 7.5,
+      "floorBaselineY": 935,
+      "supportedViews": [
+        "front",
+        "three-quarter-right",
+        "three-quarter-left",
+        "profile-right",
+        "profile-left",
+        "back"
+      ],
+      "supportedMotions": [
+        "walk-stop-turn-dialogue",
+        "stand-listen",
+        "dialogue-open-hand"
+      ],
+      "supportedHands": [
+        "relaxed",
+        "open",
+        "fist",
+        "point",
+        "grip"
+      ],
+      "supportedEmotions": [
+        "neutral",
+        "guarded",
+        "melancholy",
+        "determined",
+        "shock",
+        "suppressed-tears",
+        "soft-smile"
+      ]
+    }
+  ],
+  "motionClips": [
+    {
+      "id": "clip-arga-m2-study",
+      "characterId": "arga_v3",
+      "motionType": "walk-stop-turn-dialogue",
+      "durationSeconds": 8,
+      "requiredViews": [
+        "profile-right",
+        "three-quarter-right",
+        "front"
+      ],
+      "rootStartStage": {
+        "x": 562,
+        "y": 935
+      },
+      "rootEndStage": {
+        "x": 959,
+        "y": 935
+      }
+    }
+  ],
+  "dialogueLines": [
+    {
+      "id": "pilot-arga-01",
+      "speakerId": "arga_v3",
+      "text": "Keretamu berangkat dua jam lagi, Kirana.",
+      "delivery": "restrained melancholic baritone, unhurried warning",
+      "textSha256": "677547a6d2909db4eb2b0c15228d305148248a2dba2625e14c3ed0238b72af0d"
+    }
+  ],
+  "dialogueTracks": [
+    {
+      "lineId": "pilot-arga-01",
+      "speakerId": "arga_v3",
+      "startFrame": 98,
+      "endFrame": 157,
+      "durationSeconds": 2.45,
+      "audioFile": "audio/pilot-arga-01.wav",
+      "audioSha256": "efea5817c6af95f85bfa939cebb98b0636fdaacc46fdc2520130a2c569168947",
+      "textSha256": "677547a6d2909db4eb2b0c15228d305148248a2dba2625e14c3ed0238b72af0d",
+      "text": "Keretamu berangkat dua jam lagi, Kirana.",
+      "provenance": "energy-assisted-manual",
+      "visemes": [
+        { "startFrame": 102, "endFrame": 104, "viseme": "narrow-e" },
+        { "startFrame": 104, "endFrame": 107, "viseme": "open-a" },
+        { "startFrame": 107, "endFrame": 109, "viseme": "open-a" },
+        { "startFrame": 109, "endFrame": 110, "viseme": "closed-m" },
+        { "startFrame": 110, "endFrame": 112, "viseme": "round-o" },
+        { "startFrame": 112, "endFrame": 113, "viseme": "closed-m" },
+        { "startFrame": 113, "endFrame": 116, "viseme": "open-a" },
+        { "startFrame": 116, "endFrame": 118, "viseme": "narrow-e" },
+        { "startFrame": 118, "endFrame": 120, "viseme": "round-o" },
+        { "startFrame": 120, "endFrame": 122, "viseme": "open-a" },
+        { "startFrame": 122, "endFrame": 124, "viseme": "open-a" },
+        { "startFrame": 124, "endFrame": 125, "viseme": "closed-m" },
+        { "startFrame": 125, "endFrame": 128, "viseme": "open-a" },
+        { "startFrame": 128, "endFrame": 133, "viseme": "narrow-e" },
+        { "startFrame": 136, "endFrame": 138, "viseme": "narrow-e" },
+        { "startFrame": 138, "endFrame": 142, "viseme": "open-a" },
+        { "startFrame": 142, "endFrame": 144, "viseme": "narrow-e" },
+        { "startFrame": 148, "endFrame": 151, "viseme": "open-a" },
+        { "startFrame": 151, "endFrame": 152, "viseme": "narrow-e" }
+      ]
+    }
+  ],
+  "shots": [
+    {
+      "id": "shot-m2-study-01",
+      "sceneId": "scene-m2-bridge-test",
+      "durationSeconds": 8,
+      "framing": "wide",
+      "characterId": "arga_v3",
+      "initialView": "profile-right",
+      "requiredViews": [
+        "profile-right",
+        "three-quarter-right",
+        "front"
+      ],
+      "motionClipId": "clip-arga-m2-study",
+      "dialogueLineIds": [
+        "pilot-arga-01"
+      ],
+      "cameraMode": "fixed"
+    }
+  ]
+}

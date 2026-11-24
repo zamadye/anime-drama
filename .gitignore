@@ -1,0 +1,13 @@
+node_modules/
+dist/
+build/
+.cache/
+.codex-attachments/
+*.mp4
+*.png
+!references/character-options/*.png
+!docs/anime-v3/qa/*.png
+*.jpg
+*.pdf
+.env
+.env.*

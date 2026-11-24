@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #0d1018;
+  color: #f4efe6;
+  font-family: 'Noto Sans', 'Segoe UI', system-ui, sans-serif;
+}
+
+.anime-studio-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.anime-studio-header {
+  padding: 16px 28px;
+  border-bottom: 1px solid rgba(255, 214, 150, 0.16);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  background: #131724;
+}
+
+.anime-studio-header h1 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.anime-studio-header p {
+  margin: 4px 0 0;
+  font-size: 13px;
+  color: #aeb7ca;
+}
+
+.anime-studio-controls {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.anime-tabs {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.anime-tabs button {
+  background: #1c2235;
+  color: #dce2f0;
+  border: 1px solid #303956;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.anime-tabs button.active {
+  background: #4e3b56;
+  border-color: #ffd48d;
+  color: #fff6e8;
+}
+
+.reduced-toggle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: #cdd5e5;
+}
+
+.anime-stage {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}

@@ -1,0 +1,30 @@
+{
+  "name": "anime-drama-studio",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "studio": "vite --host 0.0.0.0",
+    "remotion": "remotion studio src/remotion-entry.ts",
+    "typecheck": "tsc --noEmit",
+    "build": "vite build",
+    "test": "node scripts/validate-anime-project.mjs && node scripts/test-v3.mjs",
+    "render:v3-sheet": "remotion still src/remotion-entry.ts V3-Arga-Model-Sheet docs/anime-v3/qa/arga-model-sheet.png --frame=0 --concurrency=1 --browser-executable=/usr/bin/google-chrome --chrome-mode=chrome-for-testing",
+    "render:v3-motion-preview": "remotion render src/remotion-entry.ts V3-Arga-Motion-Study docs/anime-v3/qa/arga-motion-study-540p.mp4 --scale=0.5 --codec h264 --crf 22 --concurrency=1 --browser-executable=/usr/bin/google-chrome --chrome-mode=chrome-for-testing",
+    "render:v3-motion": "remotion render src/remotion-entry.ts V3-Arga-Motion-Study docs/anime-v3/qa/arga-motion-study.mp4 --codec h264 --crf 20 --concurrency=1 --browser-executable=/usr/bin/google-chrome --chrome-mode=chrome-for-testing"
+  },
+  "dependencies": {
+    "@remotion/player": "4.0.545",
+    "@vitejs/plugin-react": "5.1.1",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "remotion": "4.0.545"
+  },
+  "devDependencies": {
+    "@remotion/cli": "4.0.545",
+    "@types/react": "19.2.7",
+    "@types/react-dom": "19.2.3",
+    "typescript": "5.9.3",
+    "vite": "7.3.8"
+  }
+}
